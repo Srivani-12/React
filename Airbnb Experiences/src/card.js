@@ -23,7 +23,7 @@ import React from 'react';
             <div className="card">
             {badgeText && <div className="card-badge">{badgeText}</div>}
                 <img
-                    src={`/images/${props.img}`}
+                    src={props.img}
                     className="card-image"
                     alt={props.alt || "Experience"}
                     
