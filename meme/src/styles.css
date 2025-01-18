@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+main{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Define three columns: left, middle (spacer), right */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(3, 112, 65, 0.457);
+    box-shadow: 0px 4px 6px rgba(30, 29, 29, 0.356);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center; /* Center logo and text vertically */
+}
+
+.logo {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.nav-title-left {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-title-right {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+}
+.form{
+    display: grid;
+    grid-template: 40px 40px/ 1fr 1fr;
+    padding: 20px 20px 10px 10px;
+    gap: 18px;
+
+}
+
+.form-input{
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent:5px ;
+    font-size: medium;
+}
+.form-button{
+    grid-column: 1/-1;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    background-color: rgba(3, 112, 65, 0.457);
+    font-size: medium;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.form-button:active{
+    transform: scale(1.02);
+    background-color:#ffffff;
+    color:rgba(3, 112, 65, 0.457) ;
+}
+.meme-image-body{
+    padding-left: 200px;
+    padding-right: 80px;
+}
+
+.meme-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.meme-image{
+    
+    padding: 20px;
+    width: 600px;
+    display: block;
+}
+.meme-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family:sans-serif;
+    color: white;
+    padding: 5px;
+}
+.meme-text.top {
+    top: 10px; /* Positions the top text */
+}
+
+.meme-text.bottom {
+    bottom: 10px; /* Positions the bottom text */
+}
